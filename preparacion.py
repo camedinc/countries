@@ -94,6 +94,7 @@ numericas_estandarizadas = pd.DataFrame(
 df_final = pd.concat([numericas_estandarizadas, df_categoricas.reset_index(drop=True)], axis=1)
 
 # Mostrar resultado
+print("Datos finales limpios")
 print(df_final)
 
 # Correlación
@@ -110,4 +111,4 @@ plt.close(fig)
 # Guarda la base depurada y estandarizada
 # Escritura
 path_data_clean=os.path.join(path_datos,'countries-clean.csv')
-df_final.to_csv(path_data_clean, sep=',', index=True, encoding='utf-8')
+df_final.to_csv(path_data_clean, sep=',', index=False, encoding='utf-8')
