@@ -78,7 +78,3 @@ pip install -r requirements.txt
 #### **Matriz de Correlación**:
 ![Matriz de Correlación](imagenes/1_correlacion.png)
 
----
-
-### **Métricas de Evaluación**
-- **Silhouette Score**: Evaluación de la calidad de los clusters generados.
